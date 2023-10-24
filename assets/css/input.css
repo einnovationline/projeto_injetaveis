@@ -1,0 +1,13 @@
+.input-wrapper {
+  display: flex;
+  align-items: center; /* Para alinhar verticalmente os elementos */
+}
+
+/* Estilize o label, input ou outros elementos conforme necessário */
+label {
+  margin-right: 10px; /* Espaçamento à direita para separar o label do input */
+}
+
+.quebra-menor {
+  line-height: 0.5em; /* Ou qualquer outro valor desejado */
+}

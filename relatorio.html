@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Injetáveis</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link href="./assets/css/cabecalho.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-lista.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-item.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-link.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/receitas.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-botao.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-conteudo.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/pessoas.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-funcao.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-nome.css" rel="stylesheet" />
+        <link href="./assets/css/rodape.css" rel="stylesheet" />
+        <link href="./assets/css/logo.css" rel="stylesheet" />
+        <link href="./assets/css/selectSpacing.css" rel="stylesheet" />
+        <link href="./assets/css/container.css" rel="stylesheet" />
+        <link href="./assets/css/combobox.css" rel="stylesheet" />
+        <link href="./assets/css/input.css" rel="stylesheet" />
+        <link href="./assets/css/oculta.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        <form id="myForm">
+
+        <header class="cabecalho">
+            <img class="logo" alt="logo" src="./assets/img/logo.jpg">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link ativo" href="index.html">Início</a></li>
+                    <li class="menu__item"><a class="menu__link" href="entregaveis.html">Entregáveis</a></li>
+                    <button id="printButton">Imprimir e Salvar PDF</button>
+                    <!--<li class="menu__item"><a class="menu__link" href="#">visualização</a></li>-->
+                    <!--<li class="menu__item"><a class="menu__link" href="#">Comunidade</a></li>-->
+                </ul>
+            </nav>
+        </header>
+<br>
+
+
+          
+<div class="container">
+    <div class="top-row">
+
+        <div class="table table1" style="border: none;">
+            <h3 style="color: red;"></h3>
+            <label>Paciente:</label> <span id="nomepaciente"></span><p>
+            <label>Valor:</label> <span id="somaFormatada"></span>
+        </div>
+
+        <div class="table table2" style="border: none;">
+            <h3 style="color: red;">Fase 1</h3>
+            <label id="medicoLabel1"         style="display: none;">Médico:        <span id="medicoValor1"        style="display: none;"></span></label><br>
+            <label id="nutricionistaLabel1"  style="display: none;">Nutricionista: <span id="nutricionistaValor1" style="display: none;"></span></label><br>
+            <label id="terapianeuralLabel1"  style="display: none;">Terapia Neural:<span id="terapianeuralValor1" style="display: none;"></span></label><br>
+            <label id="biomagnetismoLabel1"  style="display: none;">biomagnetismo: <span id="biomagnetismoValor1" style="display: none;"></span></label><br>
+            <label id="acupunturaLabel1"     style="display: none;">Acupuntura:    <span id="acupunturaValor1"    style="display: none;"></span></label><br>
+            <p>
+            <label id="bioimpedanciaLabel1"   style="display: none;">Bio Impedância:  <span id="bioimpedanciaValor1"   style="display: none;"></span></label><br>  	
+            <label id="bioressonanciaLabel1"  style="display: none;">Bio Ressonância: <span id="bioressonanciaValor1"  style="display: none;"></span></label><br> 	
+            <label id="detoxionicoLabel1"     style="display: none;">Detox Iônico:    <span id="detoxionicoValor1"     style="display: none;"></span></label><br>    	
+            <label id="ozonioLabel1"          style="display: none;">ôzonio:          <span id="ozonioValor1"          style="display: none;"></span></label><br>         	
+            <label id="pczaperLabel1"         style="display: none;">PC Zaper:        <span id="pczaperValor1"         style="display: none;"></span></label><br>        	
+            <label id="neurospaLabel1"        style="display: none;">Neuro SPA:       <span id="neurospaValor1"        style="display: none;"></span></label><br>       	
+            <label id="gravacaohzLabel1"      style="display: none;">Gravanção HZ:    <span id="gravacaohzValor1"      style="display: none;"></span></label><br>                       
+            <p>
+            <label id="adekLabel1" 				 style="display: none;">A.D.K.: 			 	<span id="adekValor1" 				style="display: none;"></span></label><br>            	
+            <label id="alaLabel1" 				 style="display: none;">A.L.A.: 			 	<span id="alaValor1" 				style="display: none;"></span></label><br>             	
+            <label id="azulmetilenoLabel1" 		 style="display: none;">Azul Metileno: 	  	 	<span id="azulmetilenoValor1" 		style="display: none;"></span></label><br>    	
+            <label id="boosterLabel1" 			 style="display: none;">Booster: 			 	<span id="boosterValor1" 			style="display: none;"></span></label><br>         	
+            <label id="detoxhepaticoLabel1" 	 style="display: none;">Detox Hepático:  	 	<span id="detoxhepaticoValor1" 		style="display: none;"></span></label><br>   	
+            <label id="disbioseLabel1" 			 style="display: none;">Disbiose: 			 	<span id="disbioseValor1" 			style="display: none;"></span></label><br>        	
+            <label id="fadigamitocondrialLabel1" style="display: none;">Fadiga Mitrocondial: 	<span id="fadigamitocondrialValor1"  style="display: none;"></span></label><br>	
+            <label id="morosilLabel1" 		  	 style="display: none;">Morosil: 			 	<span id="morosilValor1" 		  	style="display: none;"></span></label><br>         	
+            <label id="outros1Label1" 		  	 style="display: none;">Outros: 		     	<span id="outros1Valor1" 		  	style="display: none;"></span></label><br>         	
+            <label id="procainaBenzoicaLabel1" 	 style="display: none;">Procoaína Benzóica:  	<span id="procainaBenzoicaValor1" 	style="display: none;"></span></label><br>	
+            <label id="zincoLabel1" 			 style="display: none;">Zinco: 			  	 	<span id="zincoValor1"    		  	style="display: none;"></span></label><br>           	
+            <label id="selenioLabel1" 			 style="display: none;">Selênio: 			 	<span id="selenioValor1"  		  	style="display: none;"></span></label><br>         	
+            <label id="b12Label1" 				 style="display: none;">B 12: 				 	<span id="b12Valor1"      		  	style="display: none;"></span></label><br>             	
+            <label id="magnesioLabel1" 			 style="display: none;">Magnésio: 			 	<span id="magnesioValor1" 		  	style="display: none;"></span></label><br>        	
+            <label id="complexoBLabel1" 		 style="display: none;">Complexo B: 		 	<span id="complexoBValor1" 		  	style="display: none;"></span></label><br>       	
+            <label id="vitaminaCLabel1" 		 style="display: none;">Vitamina C: 		 	<span id="vitaminaCValor1" 		  	style="display: none;"></span></label><br>       	
+            <label id="testosternaFLabel1" 		 style="display: none;">Testosterona Feminina:  <span id="testosternaFValor1" 	  	style="display: none;"></span></label><br>    	
+            <label id="testosternaMLabel1" 		 style="display: none;">Testosterona Masculina: <span id="testosternaMValor1" 	  	style="display: none;"></span></label><br>    	
+            <label id="outrosLabel1" 			 style="display: none;">Outros: 			    <span id="outrosValor1" 		  	    style="display: none;"></span></label><br>
+        </div><!--class="table"-->
+
+        <div class="table table3" style="border: none;">
+            <h3 style="color: red;">Fase 2</h3>
+            <label id="medicoLabel2"         style="display: none;">Médico:        <span id="medicoValor2"      style="display: none;"></span></label><br>
+            <label id="nutricionistaLabel2"  style="display: none;">Nutricionista: <span id="nutricionistaValor2" style="display: none;"></span></label><br>
+            <label id="terapianeuralLabel2"  style="display: none;">Terapia Neural:<span id="terapianeuralValor2" style="display: none;"></span></label><br>
+            <label id="biomagnetismoLabel2"  style="display: none;">biomagnetismo: <span id="biomagnetismoValor2" style="display: none;"></span></label><br>
+            <label id="acupunturaLabel2"     style="display: none;">Acupuntura:    <span id="acupunturaValor2"    style="display: none;"></span></label><br>
+            <p>
+            <label id="bioimpedanciaLabel2"   style="display: none;">Bio Impedância:  <span id="bioimpedanciaValor2"   style="display: none;"></span></label><br>  	
+            <label id="bioressonanciaLabel2"  style="display: none;">Bio Ressonância: <span id="bioressonanciaValor2"  style="display: none;"></span></label><br> 	
+            <label id="detoxionicoLabel2"     style="display: none;">Detox Iônico:    <span id="detoxionicoValor2"     style="display: none;"></span></label><br>    	
+            <label id="ozonioLabel2"          style="display: none;">ôzonio:          <span id="ozonioValor2"          style="display: none;"></span></label><br>         	
+            <label id="pczaperLabel2"         style="display: none;">PC Zaper:        <span id="pczaperValor2"         style="display: none;"></span></label><br>        	
+            <label id="neurospaLabel2"        style="display: none;">Neuro SPA:       <span id="neurospaValor2"        style="display: none;"></span></label><br>       	
+            <label id="gravacaohzLabel2"      style="display: none;">Gravanção HZ:    <span id="gravacaohzValor2"      style="display: none;"></span></label><br>                       
+            <p>
+            <label id="adekLabel2" 				 style="display: none;">A.D.K.: 			 	<span id="adekValor2" 				style="display: none;"></span></label><br>            	
+            <label id="alaLabel2" 				 style="display: none;">A.L.A.: 			 	<span id="alaValor2" 				style="display: none;"></span></label><br>             	
+            <label id="azulmetilenoLabel2" 		 style="display: none;">Azul Metileno: 	  	 	<span id="azulmetilenoValor2" 		style="display: none;"></span></label><br>    	
+            <label id="boosterLabel2" 			 style="display: none;">Booster: 			 	<span id="boosterValor2" 			style="display: none;"></span></label><br>         	
+            <label id="detoxhepaticoLabel2" 	 style="display: none;">Detox Hepático:  	 	<span id="detoxhepaticoValor2" 		style="display: none;"></span></label><br>   	
+            <label id="disbioseLabel2" 			 style="display: none;">Disbiose: 			 	<span id="disbioseValor2" 			style="display: none;"></span></label><br>        	
+            <label id="fadigamitocondrialLabel2" style="display: none;">Fadiga Mitrocondial: 	<span id="fadigamitocondrialValor2"  style="display: none;"></span></label><br>	
+            <label id="morosilLabel2" 		  	 style="display: none;">Morosil: 			 	<span id="morosilValor2" 		  	style="display: none;"></span></label><br>         	
+            <label id="outros1Label2" 		  	 style="display: none;">Outros: 		     	<span id="outros1Valor2" 		  	style="display: none;"></span></label><br>         	
+            <label id="procainaBenzoicaLabel2" 	 style="display: none;">Procoaína Benzóica:  	<span id="procainaBenzoicaValor2" 	style="display: none;"></span></label><br>	
+            <label id="zincoLabel2" 			 style="display: none;">Zinco: 			  	 	<span id="zincoValor2"    		  	style="display: none;"></span></label><br>           	
+            <label id="selenioLabel2" 			 style="display: none;">Selênio: 			 	<span id="selenioValor2"  		  	style="display: none;"></span></label><br>         	
+            <label id="b12Label2" 				 style="display: none;">B 12: 				 	<span id="b12Valor2"      		  	style="display: none;"></span></label><br>             	
+            <label id="magnesioLabel2" 			 style="display: none;">Magnésio: 			 	<span id="magnesioValor2" 		  	style="display: none;"></span></label><br>        	
+            <label id="complexoBLabel2" 		 style="display: none;">Complexo B: 		 	<span id="complexoBValor2" 		  	style="display: none;"></span></label><br>       	
+            <label id="vitaminaCLabel2" 		 style="display: none;">Vitamina C: 		 	<span id="vitaminaCValor2" 		  	style="display: none;"></span></label><br>       	
+            <label id="testosternaFLabel2" 		 style="display: none;">Testosterona Feminina:  <span id="testosternaFValor2" 	  	style="display: none;"></span></label><br>    	
+            <label id="testosternaMLabel2" 		 style="display: none;">Testosterona Masculina: <span id="testosternaMValor2" 	  	style="display: none;"></span></label><br>    	
+            <label id="outrosLabel2" 			 style="display: none;">Outros: 			    <span id="outrosValor2" 		  	    style="display: none;"></span></label><br>
+        </div><!--class="table"-->
+
+        <div class="table table4" style="border: none;">
+            <h3 style="color: red;">Fase 3</h3>
+            <label id="medicoLabel3"         style="display: none;">Médico:        <span id="medicoValor3"        style="display: none;"></span></label><br>
+            <label id="nutricionistaLabel3"  style="display: none;">Nutricionista: <span id="nutricionistaValor3" style="display: none;"></span></label><br>
+            <label id="terapianeuralLabel3"  style="display: none;">Terapia Neural:<span id="terapianeuralValor3" style="display: none;"></span></label><br>
+            <label id="biomagnetismoLabel3"  style="display: none;">biomagnetismo: <span id="biomagnetismoValor3" style="display: none;"></span></label><br>
+            <label id="acupunturaLabel3"     style="display: none;">Acupuntura:    <span id="acupunturaValor3"    style="display: none;"></span></label><br>
+            <p>
+            <label id="bioimpedanciaLabel3"   style="display: none;">Bio Impedância:  <span id="bioimpedanciaValor3"   style="display: none;"></span></label><br>  	
+            <label id="bioressonanciaLabel3"  style="display: none;">Bio Ressonância: <span id="bioressonanciaValor3"  style="display: none;"></span></label><br> 	
+            <label id="detoxionicoLabel3"     style="display: none;">Detox Iônico:    <span id="detoxionicoValor3"     style="display: none;"></span></label><br>    	
+            <label id="ozonioLabel3"          style="display: none;">ôzonio:          <span id="ozonioValor3"          style="display: none;"></span></label><br>         	
+            <label id="pczaperLabel3"         style="display: none;">PC Zaper:        <span id="pczaperValor3"         style="display: none;"></span></label><br>        	
+            <label id="neurospaLabel3"        style="display: none;">Neuro SPA:       <span id="neurospaValor3"        style="display: none;"></span></label><br>       	
+            <label id="gravacaohzLabel3"      style="display: none;">Gravanção HZ:    <span id="gravacaohzValor3"      style="display: none;"></span></label><br>                       
+            <p>
+            <label id="adekLabel3"               style="display: none;">A.D.K.: 			 	<span id="adekValor3" 				style="display: none;"></span></label><br>            	
+            <label id="alaLabel3tyle"            style="display: none;">A.L.A.: 			 	<span id="alaValor3" 				style="display: none;"></span></label><br>             	
+            <label id="azulmetilenoLabel3" 	     style="display: none;">Azul Metileno: 	  	 	<span id="azulmetilenoValor3" 		style="display: none;"></span></label><br>    	
+            <label id="boosterLabel3" 			 style="display: none;">Booster: 			 	<span id="boosterValor3" 			style="display: none;"></span></label><br>         	
+            <label id="detoxhepaticoLabel3" 	 style="display: none;">Detox Hepático:  	 	<span id="detoxhepaticoValor3" 		style="display: none;"></span></label><br>   	
+            <label id="disbioseLabel3" 			 style="display: none;">Disbiose: 			 	<span id="disbioseValor3" 			style="display: none;"></span></label><br>        	
+            <label id="fadigamitocondrialLabel3" style="display: none;">Fadiga Mitrocondial: 	<span id="fadigamitocondrialValor3" style="display: none;"></span></label><br>	
+            <label id="morosilLabel3" 		  	 style="display: none;">Morosil: 			 	<span id="morosilValor3" 		  	style="display: none;"></span></label><br>         	
+            <label id="outros1Label3" 		  	 style="display: none;">Outros: 		     	<span id="outros1Valor3" 		  	style="display: none;"></span></label><br>         	
+            <label id="procainaBenzoicaLabel3" 	 style="display: none;">Procoaína Benzóica:  	<span id="procainaBenzoicaValor3" 	style="display: none;"></span></label><br>	
+            <label id="zincoLabel3"              style="display: none;">Zinco: 			  	 	<span id="zincoValor3"    		  	style="display: none;"></span></label><br>           	
+            <label id="selenioLabel3" 			 style="display: none;">Selênio: 			 	<span id="selenioValor3"  		  	style="display: none;"></span></label><br>         	
+            <label id="b12Label3"                style="display: none;">B 12: 				 	<span id="b12Valor3"      		  	style="display: none;"></span></label><br>             	
+            <label id="magnesioLabel3" 			 style="display: none;">Magnésio: 			 	<span id="magnesioValor3" 		  	style="display: none;"></span></label><br>        	
+            <label id="complexoBLabel3" 		 style="display: none;">Complexo B: 		 	<span id="complexoBValor3" 		  	style="display: none;"></span></label><br>       	
+            <label id="vitaminaCLabel3" 		 style="display: none;">Vitamina C: 		 	<span id="vitaminaCValor3" 		  	style="display: none;"></span></label><br>       	
+            <label id="testosternaFLabel3" 		 style="display: none;">Testosterona Feminina:  <span id="testosternaFValor3" 	  	style="display: none;"></span></label><br>    	
+            <label id="testosternaMLabel3" 		 style="display: none;">Testosterona Masculina: <span id="testosternaMValor3" 	  	style="display: none;"></span></label><br>    	
+            <label id="outrosLabel3" 			 style="display: none;">Outros: 			    <span id="outrosValor3" 		  	style="display: none;"></span></label><br>      	    
+        </div><!--class="table"-->
+
+    </div><!--class="top-row"-->
+</div><!--class="container"-->
+
+</form>
+
+<script src="assets/js/relatorio.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altura do contêiner, ajuste conforme necessário */
+}
+
+.table1, .table2, .table3, .table4 {
+    position: relative; /* Use relative para manter o fluxo normal dos elementos */
+    border: 1px solid #000;
+    width: 25%; /* Cada campo ocupa 25% da largura total para dividir igualmente em 4 campos */
+    height: 100%; /* Cada campo ocupa 100% da altura do contêiner pai */
+    box-sizing: border-box; /* Garante que a borda não aumente o tamanho do campo */
+    padding: 10px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 100vh; /* Tamanho da tela inteira */
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+}

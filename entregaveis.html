@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Injetáveis</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link href="./assets/css/cabecalho.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-lista.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-item.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-link.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/receitas.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-botao.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-conteudo.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/pessoas.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-funcao.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-nome.css" rel="stylesheet" />
+        <link href="./assets/css/rodape.css" rel="stylesheet" />
+        <link href="./assets/css/logo.css" rel="stylesheet" />
+        <link href="./assets/css/selectSpacing.css" rel="stylesheet" />
+        <link href="./assets/css/container.css" rel="stylesheet" />
+        <link href="./assets/css/combobox.css" rel="stylesheet" />
+        <link href="./assets/css/input.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <form id="myForm">
+
+        <header class="cabecalho">
+            <img class="logo" alt="logo" src="./assets/img/logo.jpg">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link ativo" href="index.html">Início</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Injetáveis</a></li>
+                    <li class="menu__item"><input type="submit" value="Calcular">
+                </ul>
+            </nav>
+        </header>
+<br>
+
+<div class="input-wrapper">
+    <label style="font-weight: bold;">
+       Paciente:
+       <input type="text" name="nomepaciente" id="nomepaciente">
+    </label>
+ </div><br>
+ 
+<!-- PROFISSIONAIS ------------------------------------------------------------------------>
+<div class="container">
+    <div class="top-row">
+    <div class="table" style="border: none;">
+    <table><h3 style="color: red;">Profissionais</h3>
+      <tr>
+        <th></th>
+        <th>Fase 1</th>
+        <th>Fase 2</th>
+        <th>Fase 3</th>
+      </tr>
+    
+        <div>
+            <tr><td><label class="select-spacing3">Medico:</label></td>
+            <td><select class="custom-combobox" id="medico-fase-1" name="medico-fase-1" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="medico-fase-2" name="medico-fase-2" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="medico-fase-3" name="medico-fase-3" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+        </div>
+    
+        <div>
+            <tr><td><label name="nutricionista" class="select-spacing9">nutricionista:</label></td>
+            <td><select class="custom-combobox" id="nutricionista-fase-1" name="nutricionista-fase-1" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="nutricionista-fase-2" name="nutricionista-fase-2" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="nutricionista-fase-3" name="nutricionista-fase-3" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+        </div>
+    
+        <div>
+            <tr><td><label name="terapianeural"  class="select-spacing8">terapia Neural:</label></td>
+            <td><select class="custom-combobox" id="terapianeural-fase-1" name="terapianeural-fase-1" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="terapianeural-fase-2" name="terapianeural-fase-2" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="terapianeural-fase-3" name="terapianeural-fase-3" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+        </div>
+    
+        <div>
+            <tr><td><label name="biomagnetismo" class="select-spacing5">biomagnetismo:</label></td>
+            <td><select class="custom-combobox" id="biomagnetismo-fase-1" name="biomagnetismo-fase-1" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="biomagnetismo-fase-2" name="biomagnetismo-fase-2" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="biomagnetismo-fase-3" name="biomagnetismo-fase-3" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+        </div>
+    
+        <div>
+            <tr><td><label name="acupuntura" class="select-spacing7">acupuntura:</label></td>
+            <td><select class="custom-combobox" id="acupuntura-fase-1" name="acupuntura-fase-1" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="acupuntura-fase-2" name="acupuntura-fase-2" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+    
+            <td><select class="custom-combobox" id="acupuntura-fase-3" name="acupuntura-fase-3" class="select-spacing">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </label></td>
+        </div>
+    </table>
+    </div><!--class="table"-->
+
+<!-- APARELHOS ------------------------------------------------------------------------>
+<div class="table" style="border: none;">
+<table><h3 style="color: red;">Aparelhos</h3>
+  <tr>
+    <th></th>
+    <th>Fase 1</th>
+    <th>Fase 2</th>
+    <th>Fase 3</th>
+  </tr>
+
+    <div>
+        <tr><td><label name="bioimpedancia" class="select-spacing6">bioimpedancia:</label></td>
+        <td><select class="custom-combobox" id="bioimpedancia-fase-1" name="bioimpedancia-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="bioimpedancia-fase-2" name="bioimpedancia-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="bioimpedancia-fase-3" name="bioimpedancia-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+
+    <div>
+        <tr><td><label name="bioressonancia" class="select-spacing5">bioressônancia:</label></td>
+        <td><select class="custom-combobox" id="bioressonancia-fase-1" name="bioressonancia-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="bioressonancia-fase-2" name="bioressonancia-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="bioressonancia-fase-3" name="bioressonancia-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+
+    <div>
+        <tr><td><label name="detoxionico"  class="select-spacing4">detox iônico:</label></td>
+        <td><select class="custom-combobox" id="detoxionico-fase-1" name="detoxionico-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="detoxionico-fase-2" name="detoxionico-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="detoxionico-fase-3" name="detoxionico-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+
+    <div>
+        <tr><td><label name="ozonio" class="select-spacing3">ozônio:</label></td>
+        <td><select class="custom-combobox" id="ozonio-fase-1" name="ozonio-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="ozonio-fase-2" name="ozonio-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="ozonio-fase-3" name="ozonio-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+
+    <div>
+        <tr><td><label name="pczaper" class="select-spacing2">PC Zapper:</label></td>
+        <td><select class="custom-combobox" id="pczaper-fase-1" name="pczaper-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="pczaper-fase-2" name="pczaper-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="pczaper-fase-3" name="pczaper-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+
+    <div>
+        <tr><td><label name="neurospa" class="select-spacing1">neuro spa:</label></td>
+        <td><select class="custom-combobox" id="neurospa-fase-1" name="neurospa-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="neurospa-fase-2" name="neurospa-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="neurospa-fase-3" name="neurospa-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+
+    <div>
+        <tr><td><label name="gravacaohz" class="select-spacing">Gravação Frequência:</label></td>
+        <td><select class="custom-combobox" id="gravacaohz-fase-1" name="gravacaohz-fase-1" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="gravacaohz-fase-2" name="gravacaohz-fase-2" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+
+        <td><select class="custom-combobox" id="gravacaohz-fase-3" name="gravacaohz-fase-3" class="select-spacing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </label></td>
+    </div>
+</table>
+</div><!--class="table"-->
+</div><!--class="top-row"-->
+
+<!-- INJETÁVEIS ------------------------------------------------------------------------>
+<div class="top-row">
+    <div class="table" style="border: none;"><h3 style="color: red; order: 1;">Injetáveis</h3>
+        <table>
+            <tr>
+              <th></th>
+              <th>Fase 1</th>
+              <th>Fase 2</th>
+              <th>Fase 3</th>
+            </tr>
+          
+              <div>
+                  <tr><td><label name="adek" class="select-spacing10">A. D. E. K.:</label></td>
+                  <td><select class="custom-combobox" id="adek-fase-1" name="adek-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="adek-fase-2" name="adek-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="adek-fase-3" name="adek-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="ala" class="select-spacing3">A. L. A.:</label></td>
+                  <td><select class="custom-combobox" id="ala-fase-1" name="ala-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="ala-fase-2" name="ala-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="ala-fase-3" name="ala-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="azulmetileno"  class="select-spacing11">Azul de Metileno:</label></td>
+                  <td><select class="custom-combobox" id="azulmetileno-fase-1" name="azulmetileno-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="azulmetileno-fase-2" name="azulmetileno-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="azulmetileno-fase-3" name="azulmetileno-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="booster" class="select-spacing12">Boster de ATP:</label></td>
+                  <td><select class="custom-combobox" id="booster-fase-1" name="booster-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="booster-fase-2" name="booster-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="booster-fase-3" name="booster-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="detoxhepatico" class="select-spacing13">Detox Hepático:</label></td>
+                  <td><select class="custom-combobox" id="detoxhepatico-fase-1" name="detoxhepatico-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="detoxhepatico-fase-2" name="detoxhepatico-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="detoxhepatico-fase-3" name="detoxhepatico-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="disbiose" class="select-spacing14">Disbiose:</label></td>
+                  <td><select class="custom-combobox" id="disbiose-fase-1" name="disbiose-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="disbiose-fase-2" name="disbiose-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="disbiose-fase-3" name="disbiose-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="fadigamitocondrial" class="select-spacing15">Fadiga Mitocondrial:</label></td>
+                  <td><select class="custom-combobox" id="fadigamitocondrial-fase-1" name="fadigamitocondrial-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="fadigamitocondrial-fase-2" name="fadigamitocondrial-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="fadigamitocondrial-fase-3" name="fadigamitocondrial-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="morosil" class="select-spacing16">Morosil:</label></td>
+                  <td><select class="custom-combobox" id="morosil-fase-1" name="morosil-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="morosil-fase-2" name="morosil-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="morosil-fase-3" name="morosil-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="outros" class="select-spacing">Outros:</label></td>
+                  <td><select class="custom-combobox" id="outros-fase-1" name="outros-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="outros-fase-2" name="outros-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="outros-fase-3" name="outros-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          </table>
+
+
+    </div><!--class="table"-->
+
+    <div class="table" style="border: none;"><h3 type="hidden" style="color: #f2f2f2;">.</h3>
+        <table>
+            <tr>
+              <th></th>
+              <th>Fase 1</th>
+              <th>Fase 2</th>
+              <th>Fase 3</th>
+            </tr>
+          
+              <div>
+                  <tr><td><label name="procainaBenzoica" >Procaina Benzóica:</label></td>
+                  <td><select class="custom-combobox" id="procainaBenzoica-fase-1" name="procainaBenzoica-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="procainaBenzoica-fase-2" name="procainaBenzoica-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="procainaBenzoica-fase-3" name="procainaBenzoica-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="zinco" class="select-spacing3">Zinco:</label></td>
+                  <td><select class="custom-combobox" id="zinco-fase-1" name="zinco-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="zinco-fase-2" name="zinco-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="zinco-fase-3" name="zinco-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="selenio"  class="select-spacing11">Selênio:</label></td>
+                  <td><select class="custom-combobox" id="selenio-fase-1" name="selenio-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="selenio-fase-2" name="selenio-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="selenio-fase-3" name="selenio-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="b12" class="select-spacing12">B12:</label></td>
+                  <td><select class="custom-combobox" id="b12-fase-1" name="b12-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="b12-fase-2" name="b12-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="b12-fase-3" name="b12-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="magnesio" class="select-spacing13">Magnésio:</label></td>
+                  <td><select class="custom-combobox" id="magnesio-fase-1" name="magnesio-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="magnesio-fase-2" name="magnesio-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="magnesio-fase-3" name="magnesio-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="complexoB" class="select-spacing14">complexo B:</label></td>
+                  <td><select class="custom-combobox" id="complexoB-fase-1" name="complexoB-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="complexoB-fase-2" name="complexoB-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="complexoB-fase-3" name="complexoB-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="vitaminaC" class="select-spacing15">Vitamina C:</label></td>
+                  <td><select class="custom-combobox" id="vitaminaC-fase-1" name="vitaminaC-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="vitaminaC-fase-2" name="vitaminaC-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="vitaminaC-fase-3" name="vitaminaC-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="testosternaM" class="select-spacing16">testosterna Masculina:</label></td>
+                  <td><select class="custom-combobox" id="testosternaM-fase-1" name="testosternaM-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="testosternaM-fase-2" name="testosternaM-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="testosternaM-fase-3" name="testosternaM-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+      
+              <div>
+                  <tr><td><label name="testosternaF" class="select-spacing16">testosterna Feminina:</label></td>
+                  <td><select class="custom-combobox" id="testosternaF-fase-1" name="testosternaF-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="testosternaF-fase-2" name="testosternaF-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="testosternaF-fase-3" name="testosternaF-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          
+              <div>
+                  <tr><td><label name="outros1" class="select-spacing">Outros:</label></td>
+                  <td><select class="custom-combobox" id="outros1-fase-1" name="outros1-fase-1" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="outros1-fase-2" name="outros1-fase-2" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+          
+                  <td><select class="custom-combobox" id="outros1-fase-3" name="outros1-fase-3" class="select-spacing">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </label></td>
+              </div>
+          </table>    
+        </div><!--class="table"-->
+
+    </div><!--class="bottom-row"-->
+
+
+    
+
+</div><!--class="container"-->
+</form>
+
+<script src="assets/js/entregaveis.js"></script>
+</html>
